@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F2109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeadOneView">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="机组" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPv-8E-g3Q">
+                    <rect key="frame" x="0.0" y="0.0" width="89" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="负荷率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os9-Pc-gwl">
+                    <rect key="frame" x="178" y="0.0" width="88" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="供热量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-vw-yif">
+                    <rect key="frame" x="355" y="0.0" width="89" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="负荷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8h-cF-2TZ">
+                    <rect key="frame" x="89" y="0.0" width="89" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGC指令" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-oH-lIt">
+                    <rect key="frame" x="266" y="0.0" width="89" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EXZ-vw-yif" secondAttribute="trailing" id="57d-go-6Iu"/>
+                <constraint firstItem="Acf-oH-lIt" firstAttribute="width" secondItem="SPv-8E-g3Q" secondAttribute="width" id="5s2-Si-Z6v"/>
+                <constraint firstItem="Os9-Pc-gwl" firstAttribute="leading" secondItem="L8h-cF-2TZ" secondAttribute="trailing" id="AXK-gL-MYQ"/>
+                <constraint firstAttribute="bottom" secondItem="Acf-oH-lIt" secondAttribute="bottom" id="DOG-ig-u2b"/>
+                <constraint firstAttribute="bottom" secondItem="Os9-Pc-gwl" secondAttribute="bottom" id="EDW-Sn-otE"/>
+                <constraint firstItem="Acf-oH-lIt" firstAttribute="leading" secondItem="Os9-Pc-gwl" secondAttribute="trailing" id="Jxi-Ty-Vjt"/>
+                <constraint firstAttribute="bottom" secondItem="L8h-cF-2TZ" secondAttribute="bottom" id="KDw-5X-uQA"/>
+                <constraint firstAttribute="bottom" secondItem="EXZ-vw-yif" secondAttribute="bottom" id="MxC-MK-9Pd"/>
+                <constraint firstItem="L8h-cF-2TZ" firstAttribute="width" secondItem="SPv-8E-g3Q" secondAttribute="width" id="Uyk-Ci-jdV"/>
+                <constraint firstItem="Os9-Pc-gwl" firstAttribute="width" secondItem="SPv-8E-g3Q" secondAttribute="width" id="Vqu-f1-ZfN"/>
+                <constraint firstItem="L8h-cF-2TZ" firstAttribute="leading" secondItem="SPv-8E-g3Q" secondAttribute="trailing" id="g6O-GA-OOr"/>
+                <constraint firstAttribute="bottom" secondItem="SPv-8E-g3Q" secondAttribute="bottom" id="gth-iW-hS5"/>
+                <constraint firstItem="Os9-Pc-gwl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="li3-jT-xlh"/>
+                <constraint firstItem="SPv-8E-g3Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pB3-dk-ga4"/>
+                <constraint firstItem="Acf-oH-lIt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qbc-MB-I4X"/>
+                <constraint firstItem="EXZ-vw-yif" firstAttribute="leading" secondItem="Acf-oH-lIt" secondAttribute="trailing" id="rLR-kT-sDd"/>
+                <constraint firstItem="EXZ-vw-yif" firstAttribute="width" secondItem="SPv-8E-g3Q" secondAttribute="width" id="sUc-EN-UTW"/>
+                <constraint firstItem="SPv-8E-g3Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="unc-PM-cAW"/>
+                <constraint firstItem="L8h-cF-2TZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zDg-AQ-Y4l"/>
+                <constraint firstItem="EXZ-vw-yif" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zQp-Uq-Hc3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fuLab" destination="L8h-cF-2TZ" id="vhl-kw-xBI"/>
+                <outlet property="heatLab" destination="EXZ-vw-yif" id="3Rz-3D-zLN"/>
+                <outlet property="leftLab" destination="SPv-8E-g3Q" id="TdN-mv-pcu"/>
+                <outlet property="proLLab" destination="Os9-Pc-gwl" id="p1j-Qm-j23"/>
+                <outlet property="proLab" destination="Acf-oH-lIt" id="nly-W0-JVi"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="48"/>
+        </view>
+    </objects>
+</document>

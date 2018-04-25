@@ -1,0 +1,94 @@
+//
+//  PrefixHeader.pch
+//  dsdl
+//
+//  Created by 廉英雷 on 16/11/2.
+//  Copyright © 2016年 廉英雷. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#if DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s",__func__)、
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+//导航栏主题颜色
+#define themeColor kUIColorFromRGB(0x1f9d85)
+
+#define IPHONE5W 320
+
+#define IPHONE6W 375
+
+#define IPHONE6PW 414
+/** 工程的接口*/
+
+#define baseUrl  @"http://58.18.33.194:9002/"
+//#define baseUrl  @"http://192.168.1.13:8889/"
+
+
+
+//#define baseUrl  @"http://192.168.1.25:8889/"
+
+//#define baseUrl  @"http://192.168.1.161:8080/"
+ static  NSString * appServer = baseUrl;
+
+#define appInternal @"http://10.160.10.62:9002/"
+
+#define isTest   YES
+
+#define CEAPPSERVE @"http://58.18.33.194:9002/"
+
+#define  imageServer @"http://192.168.1.166/"
+
+#define WXAPPID @"wx8cea05ca52a59c50"
+
+#define JPUSHID @"52415364b0e44bda7567ac84"
+//屏幕宽高
+#define  _width   [[UIScreen mainScreen] bounds].size.width
+#define  _height  [[UIScreen mainScreen] bounds].size.height
+
+#define KEYVERSION @"CFBundleShortVersionString"
+/** 当前APP版本 */
+#define kCurrentVersion ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+
+
+/** 获取tokenId*/
+
+#define TOKENID  [[NSUserDefaults standardUserDefaults] objectForKey:@"tokenId"]
+
+/** 当前build号 */
+#define kCurrentBuildVersion ([[[NSBundle mainBundle] infoDictionary]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIImageView+WebCache.h"
+#import "AFNetworking.h"
+#import "UIDevice-Reachability.h"
+#import "Tools.h"
+#import "SVProgressHUD.h"
+#import "HttpRequest.h"
+#import "BaseViewController.h"
+#import "MBProgressHUD.h"
+#import "KVNProgress.h"
+#import "UIImageView+Category.h"
+#import "UIView+XLExtension.h"
+
+
+//用户信息文件缓存路径
+#define UserInfoDataFile [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"userInfo.data"]
+
+
+#define tokenIdFile [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"tokenIdInfo.data"]
+#endif /* PrefixHeader_pch */
